@@ -67,7 +67,7 @@ Un nœud worker dans Kubernetes est un élément du cluster chargé d'exécuter 
 > - `Kube-Proxy` : Gère la communication réseau entre les pods, assurant la connectivité réseau et l'équilibrage de charge au sein du cluster.
 
 *Schéma d'architecture K8S/K3S*
-![](assets/k3_01.svg)
+![](k3_01.svg)
 
 ### f. Le management des objets Kubernetes
 
@@ -337,7 +337,7 @@ containers:
 >     - `type` : Le type du volume, défini comme `DirectoryOrCreate`. Cela indique que le répertoire spécifié doit être créé s'il n'existe pas déjà. 
 
 Ce volume permet le partage de données entre les conteneurs et l'hôte du cluster Kubernetes. Le conteneur `nginx`devrait donc publier la page web générée par le conteneur `debian`.
-![](assets/k3_02.png)
+![](k3_02.png)
 
 
 Appliquez la configuration décrite dans le fichier `mcpod-demo.yaml` avec la commande suivante :
@@ -1545,7 +1545,7 @@ Commercial support is available at
 Schéma illustrant le parcours des requêtes clients internes dans le cluster.
 
 
-![](assets/K3_03.png)
+![](K3_03.png)
 ### c. Le Service de type NodePort
 
 Un service de type `NodePort` permet d'exposer une application sur un port statique sur chaque nœud du cluster, offrant ainsi aux clients externes la possibilité d'accéder à l'application via l'adresse IP de n'importe quel nœud du cluster en utilisant le port spécifié.
